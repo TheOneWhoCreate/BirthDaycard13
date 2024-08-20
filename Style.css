@@ -209,7 +209,7 @@ span {
 
 .audio-text1 {
     position: absolute;
-    top: 200lvh;
+    top: 225lvh;
     left: 2px;
     width: 389px;
     height: 30px;
@@ -234,13 +234,13 @@ span {
 .Audio {
     width: 390px;
     padding-bottom: 3px;
-    top: 272lvh;
+    top: 250lvh;
     position: absolute;
 }
 
 .Audio1 {
     position: absolute;
-    top: 280lvh;
+    top: 300lvh;
     width: 390px;
     padding-bottom: 3px;
 }
@@ -249,7 +249,7 @@ span {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 290lvh;
+    top: 350lvh;
     width: 390px;
     left: 2px;
     font-family: 'EmilysCandy';
