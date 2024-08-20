@@ -216,13 +216,13 @@ span {
     left: 2px;
     width: 389px;
     height: 30px;
-    border-top: 2px solid #0055ff;
+    border-top: 2px solid #002C54;
     border-left: 2px solid #b8b9bb;
     border-right: 2px solid #b8b9bb;
-    border-bottom: 2px solid #0055ff;
+    border-bottom: 2px solid #002C54;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.753);
-    background-color: #55ff00;
+    background-color: #C5001A;
 
     p {
         text-align: center;
@@ -230,7 +230,7 @@ span {
         font-weight: bold;
         font-style: italic;
         font-size: 18px;
-        color: rgb(14.76% 13.457% 66.333%);
+        color: #E4EA8C;
     }
 }
 
@@ -261,9 +261,10 @@ span {
     border-bottom: 2px solid #0055ff;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.753);
-    background-color: #b8b9bb;
+    background-color: #101820;
 
     p {
         font-size: 10px;
+        color: #FEE715;
     }
 }
