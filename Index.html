@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Card</title>
+
+    <link rel="preload" href="GreatVibes-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="MedusaGothic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="EmilysCandy-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="QueenInlineGrunge.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Style.css">
+    <script src="confetti.js"></script> <!-- Load confetti.js asynchronously -->
+</head>
+
+<body>
+
+
+    <div class="contains">
+        <div class="confetti">
+            <script>
+                const startIt = () => {
+                    setTimeout(function () {
+                        console.log("start");
+                        startConfetti();
+                    }, 1000); // Start confetti after 1 second
+                };
+
+                const stopIt = () => {
+                    setTimeout(function () {
+                        console.log("stop");
+                        stopConfetti();
+                    }, 7000); // Stop confetti after 6 seconds
+
+                    setTimeout(function () {
+                        fadeOut(document.querySelector('.wrapper')); // Start fadeOut after 2 seconds of confetti stop
+                    }, 2500); // Adjust timing to avoid overlap
+                };
+
+                function fadeOut(el) {
+                    let opacity = 1;
+                    const duration = 6000;
+                    const fadeRate = 70;
+                    const fadeAmount = fadeRate / duration;
+
+                    const interval = setInterval(function () {
+                        if (opacity > 0) {
+                            opacity -= fadeAmount;
+                            el.style.opacity = opacity;
+                        } else {
+                            clearInterval(interval); // Stop the interval when opacity reaches 0
+                            el.style.display = 'none'; // Hide the element
+                        }
+                    }, fadeRate);
+                }
+
+                document.addEventListener('DOMContentLoaded', () => {
+                    startIt();
+                    stopIt();
+                });
+            </script>
+        </div>
+
+        <div class="wrapper">
+            <p class="p">
+                Happy Birthday!!!
+            </p>
+        </div>
+
+        <div class="firstContainer">
+            <div class="imgSection">
+                <img src="1st.jpg" alt="1stImg">
+                <img src="2nd.jpg" alt="2ndImg">
+                <img src="3rd.jpg" alt="3rdImg">
+                <img src="4th.jpg" alt="4thImg">
+            </div>
+
+            <div class="textSection">
+                <div class="animate-text">
+                    <p>Happy Birthday</p>
+                </div>
+                <div class="text-section-p">
+                    <p class="p1">
+                        <span>Mi Reina</span>! I hope you remember me. Today holds a special place in my heart— it’s the
+                        day the
+                        world was graced with your presence. Your eyes were like windows to another world, a place where
+                        golden sunsets melted into the horizon and the warmth of honeyed love lingered in the air. They
+                        held the mystery of dark, ancient woods, pulling me in with the promise of secrets untold. In
+                        their depths, I saw burning stars, shimmering with the mysteries of the universe, vast and
+                        unexplored. They were as profound and captivating as the deepest ocean, making it impossible to
+                        look away. And in that moment, <span>I fell, completely and irreversibly, into their endless
+                            allure.</span>
+                    </p>
+
+                    <p class="p2">
+                        If I were a poet, I would describe your eyes like this: <br>"<span>Eyes</span> like golden
+                        skies, as if they
+                        have
+                        drowned the sun within them. <br><span>Eyes</span> that remind me of the sweetness of honey, the
+                        amber warmth of
+                        love. <br><span>Eyes</span> like dark woods, where one could be lost and never found.
+                        <br><span>Eyes</span> like burning stars,
+                        mysteries of the universe yet to be discovered. <br><span>Eyes</span> as profound and
+                        captivating as the depths
+                        of
+                        the ocean. <br><span>Eyes</span> worth loving and dying for. <br><span>Eyes</span> like a starry
+                        night carrying the secrets of the
+                        universe. They say mysteries often make you lose your mind. <span>I have already lost
+                            mine</span>."
+                    </p>
+
+                    <p class="p3">
+                        Then, on our tour of Purulia, I had the chance to get to know you better, and I found myself
+                        falling
+                        even deeper for you. I never mentioned it, but it was in Purulia that everything began. During
+                        our
+                        trip to Puri, I finally confessed my feelings. The days after returning from Puri were some of
+                        the
+                        best of my life. Your bracelet still remains with me as a lucky charm, and I still keep your
+                        photo.
+                        I saw you a few days ago but didn’t have the courage to speak. However, due to some
+                        misunderstandings, everything ended. I had thought of a wonderful gift for your birthday, but it
+                        all
+                        fell apart before I could give it to you. <span>I really, really miss you</span>, your family,
+                        and your
+                        sister
+                        dearly. I will never forget you. If you ever want to talk to me, know that I will always wait
+                        for
+                        you. <span>I hope life treats you kindly</span> and you find <span>happiness</span> wherever you
+                        are, even if I’m not
+                        by
+                        your side.
+                    </p>
+
+                    <p class="p4">
+                        I hope someday you will <span>talk to me</span> ,<br>
+                        someday you will <span>call me</span> ,<br>
+                        someday you will again <span>call my name</span> ,<br>
+                        and someday you will also <span>fall for me</span> .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="audio-text1">
+        <p>
+            Songs Dedicated To you
+        </p>
+    </div>
+
+    <audio controls preload="auto" class="Audio">
+        <source src="Mere-Naam-Tu.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls preload="auto" class="Audio1">
+        <source src="Tujh-Mein-Rab-Dikhta-Hai-From-Ra.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="watermark">
+        <p>Atanu Rooj</p>
+    </div>
+
+    <style>
+        @font-face {
+            font-family: 'EmilysCandy';
+            src: url('EmilysCandy-Regular.woff2') format('woff2');
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'GreatVibes';
+            src: url('GreatVibes-Regular.woff2') format('woff2');
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'MedusaGothic';
+            src: url('MedusaGothic.woff2') format('woff2');
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'QueenInlineGrunge';
+            src: url('QueenInlineGrunge.woff2') format('woff2');
+            font-display: swap;
+        }
+    </style>
+
+    <script>
+        // Preload Images
+        function preloadImages() {
+            const images = ['1st.jpg', '2nd.jpg', '3rd.jpg', '4th.jpg'];
+            images.forEach(image => {
+                const img = new Image();
+                img.src = image;
+            });
+        }
+
+        // Preload Audio
+        function preloadAudio() {
+            const audios = ['Mere-Naam-Tu.mp3', 'Tujh-Mein-Rab-Dikhta-Hai-From-Ra.mp3'];
+            audios.forEach(audio => {
+                const aud = new Audio();
+                aud.src = audio;
+            });
+        }
+
+        // Initialize all preloads
+        function initializePreloads() {
+            preloadImages();
+            preloadAudio();
+        }
+
+        // Event listener to ensure preloads start when the DOM is fully parsed
+        document.addEventListener('DOMContentLoaded', initializePreloads);
+    </script>
+</body>
+
+</html>
