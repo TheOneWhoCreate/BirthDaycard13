@@ -1,4 +1,4 @@
-var maxParticleCount = 200; //set max confetti count
+var maxParticleCount = 250; //set max confetti count
 var particleSpeed = 2; //set the particle animation speed
 var startConfetti; //call to start confetti animation
 var stopConfetti; //call to stop adding confetti
@@ -10,7 +10,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 	stopConfetti = stopConfettiInner;
 	toggleConfetti = toggleConfettiInner;
 	removeConfetti = removeConfettiInner;
-	var colors = ["#7C00FE", "#F5004F", "#00FF7F", "Gold", "Violet", "#FF00FF",  "hotPink", "#5D3FD3", "#C40C0C", "#40E0D0", "#e04050"]
+	var colors = ["Gold", '#ff63c9', '#ffdb00', '#cbe305', '#68c7ec', '#ffb3f0', "#FF00FF",  "#408EC6", "#C4DFE6", "#ff1b6b", "#40E0D0", "#735DA5", "#6AB187", "#F5004F", "#00FF7F"]
 	var streamingConfetti = false;
 	var animationTimer = null;
 	var particles = [];

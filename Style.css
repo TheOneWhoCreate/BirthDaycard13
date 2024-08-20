@@ -36,7 +36,7 @@ span {
     100% {
         transform: translateX(0px);
         opacity: 100%;
-        color: rgb(0, 131, 253);
+        color: #115989;
     }
 }
 
@@ -66,15 +66,16 @@ span {
     border-right: 2px solid #b8b9bb;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.753);
-    background-color: #47a8b9;
+    background-color: #2F3C7E;
     width: 395px;
     height: 990px;
     padding-top: 235px;
+    padding-right: 2px;
 
     .p {
         text-align: center;
-        font-size: 85px;
-        color: #ba2023;
+        font-size: 88px;
+        color: #FBEAEB;
         font-family: 'GreatVibes';
     }
 }
@@ -86,7 +87,7 @@ span {
 }
 
 .firstContainer {
-    background-color: hsl(0, 0%, 94%);
+    background-color: #FCF6F5;
     width: 390px;
     height: max-content;
     margin-top: 4px;
@@ -103,7 +104,7 @@ span {
     display: grid;
     grid-template-columns: 185px 185px;
     grid-template-rows: 245px;
-    gap: 5px 5px;
+    gap: 3px 5px;
     justify-content: center;
     justify-items: center;
     padding-top: 2px;
@@ -114,11 +115,13 @@ span {
         margin-top: 5px;
         width: 180px;
         height: 235px;
-        border-bottom: 2px solid #b8b9bb;
-        border-right: 2px solid #b8b9bb;
+        border-bottom: 0.5px solid #b8b9bb;
+        border-right: 0.5px solid #b8b9bb;
         border-radius: 5px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
         position: relative;
+        outline: 2px solid black;
+        outline-style: inset;
     }
 }
 
@@ -126,7 +129,7 @@ span {
     width: 380px;
     display: flex;
     justify-content: center;
-    color: hsl(0, 0%, 94%);
+    color: #FCF6F5;
     animation: RightToLeft 4s 6s forwards ease-in;
 
     p {
@@ -143,9 +146,9 @@ span {
 }
 
 .text-section-p {
-    margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 5px;
 
     .p1 {
         font-family: "Times New Roman", Times, serif;
