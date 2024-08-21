@@ -66,7 +66,7 @@ span {
     border-right: 2px solid #b8b9bb;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.753);
-    background-color: #2F3C7E;
+    background-color: #E51A4C; /* Spanish crimson */
     width: 395px;
     height: 990px;
     padding-top: 235px;
@@ -75,12 +75,12 @@ span {
     .p {
         text-align: center;
         font-size: 88px;
-        color: #FBEAEB;
+        color: #FFB6C1; /* Light pink */
         font-family: 'GreatVibes';
     }
 }
 
-#confetti-canvas {
+#confetti {
     height: 1000px;
     width: 390px;
     position: relative;
@@ -115,12 +115,12 @@ span {
         margin-top: 5px;
         width: 180px;
         height: 235px;
-        border-bottom: 0.5px solid #b8b9bb;
-        border-right: 0.5px solid #b8b9bb;
+        border-bottom: 1px solid #b8b9bb;
+        border-right: 1px solid #b8b9bb;
         border-radius: 5px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
         position: relative;
-        outline: 1.5px solid black;
+        outline: 1.5px solid #DFC5FF;
         outline-style: inset;
     }
 }
@@ -216,13 +216,13 @@ span {
     left: 2px;
     width: 389px;
     height: 30px;
-    border-top: 2px solid #0055ff;
+    border-top: 2px solid #DFC5FF;
     border-left: 2px solid #b8b9bb;
     border-right: 2px solid #b8b9bb;
-    border-bottom: 2px solid #0055ff;
+    border-bottom: 2px solid #DFC5FF;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.753);
-    background-color: #55ff00;
+    background-color: #E51A4C;
 
     p {
         text-align: center;
@@ -230,7 +230,7 @@ span {
         font-weight: bold;
         font-style: italic;
         font-size: 18px;
-        color: rgb(14.76% 13.457% 66.333%);
+        color: #FFB6C1;
     }
 }
 
@@ -256,12 +256,12 @@ span {
     width: 390px;
     left: 2px;
     font-family: 'EmilysCandy';
-    border-top: 2px solid #0055ff;
+    border-top: 2px solid #DFC5FF;
     border-left: 2px solid #b8b9bb;
-    border-bottom: 2px solid #0055ff;
+    border-bottom: 2px solid #DFC5FF;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.753);
-    background-color: #408EC6;
+    background-color: #E51A4C;
 
     p {
         font-size: 10px;

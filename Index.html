@@ -12,37 +12,21 @@
     <link rel="preload" href="QueenInlineGrunge.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <link rel="stylesheet" href="Style.css">
-    <script src="confetti.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
-
-
     <div class="contains">
-        <div class="confetti">
+        <canvas id="confetti">
             <script>
-                const startIt = () => {
-                    setTimeout(function () {
-                        console.log("start");
-                        startConfetti();
-                    }, 1000); // Start confetti after 1 second
-                };
-
-                const stopIt = () => {
-                    setTimeout(function () {
-                        console.log("stop");
-                        stopConfetti();
-                    }, 7000); // Stop confetti after 6 seconds
-
-                    setTimeout(function () {
-                        fadeOut(document.querySelector('.wrapper')); // Start fadeOut after 2 seconds of confetti stop
-                    }, 2500); // Adjust timing to avoid overlap
-                };
+                setTimeout(function () {
+                    fadeOut(document.querySelector('.wrapper')); // Start fadeOut after 2 seconds of confetti stop
+                }, 2000); // Adjust timing to avoid overlap
 
                 function fadeOut(el) {
                     let opacity = 1;
                     const duration = 6000;
-                    const fadeRate = 70;
+                    const fadeRate = 60;
                     const fadeAmount = fadeRate / duration;
 
                     const interval = setInterval(function () {
@@ -55,13 +39,8 @@
                         }
                     }, fadeRate);
                 }
-
-                document.addEventListener('DOMContentLoaded', () => {
-                    startIt();
-                    stopIt();
-                });
             </script>
-        </div>
+        </canvas>
 
         <div class="wrapper">
             <p class="p">
@@ -217,6 +196,8 @@
         // Event listener to ensure preloads start when the DOM is fully parsed
         document.addEventListener('DOMContentLoaded', initializePreloads);
     </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
