@@ -18,7 +18,8 @@ const bothCornerConfetti = () => {
             angle: 315,
             spread: 120,
             gravity: 0.8,
-            ticks: 600,
+            ticks: 300,
+            drift: 1,
             origin: {
                 x: 0,
                 y: 0
@@ -34,7 +35,8 @@ const bothCornerConfetti = () => {
             angle: 225,
             spread: 120,
             gravity: 0.8,
-            ticks: 500,
+            ticks: 300,
+            drift: -1,
             origin: {
                 x: 1,
                 y: 0
