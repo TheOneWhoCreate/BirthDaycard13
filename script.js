@@ -134,7 +134,7 @@ const startIt = () => {
                 requestAnimationFrame(frame);
             }
         }());
-    }, 1000); // Start confetti after 1 second
+    }, 500); // Start confetti after 1 second
 };
 
 document.addEventListener('DOMContentLoaded', () => {
