@@ -37,13 +37,29 @@ span {
         transform: translateX(0px);
         opacity: 100%;
         color: #115989;
+        text-shadow: 3px 2px 1px #7A7A7A;
     }
 }
+
+@keyframes text-shadow-pop-left {
+    0% {
+        text-shadow: 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000;
+        transform: translateX(0);
+    }
+
+    100% {
+        text-shadow: 0 1px #012622, 0 2px #012622, 0 3px #012622, 0 4px #012622;
+        transform: translateX(-4px);
+        color: #FFB6C1;
+    }
+}
+
 
 .contains {
     display: flex;
     justify-content: center;
     width: 390px;
+
 }
 
 .firstContainer,
@@ -52,31 +68,27 @@ span {
     position: absolute;
 }
 
-.firstContainer {
-    z-index: -10;
-}
-
-.wrapper,
-.p {
-    z-index: -5;
-}
-
 .wrapper {
-    border-bottom: 2px solid #b8b9bb;
-    border-right: 2px solid #b8b9bb;
+    width: 390px;
+    padding-top: 235px;
+    height: 990px;
+    border: 2px solid #b8b9bb;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.753);
-    background-color: #E51A4C; /* Spanish crimson */
-    width: 395px;
-    height: 990px;
-    padding-top: 235px;
-    padding-right: 2px;
+    /* Spanish crimson */
+    background-color: #E51A4C;
+    z-index: -5;
 
-    .p {
+    p {
         text-align: center;
         font-size: 88px;
-        color: #FFB6C1; /* Light pink */
+        /* Light pink */
+        color: #FFB6C1;
         font-family: 'GreatVibes';
+        text-shadow: #212121 0px 0px 1px, #212121 0px 0px 1px, #212121 0px 0px 1px,
+            #212121 0px 0px 1px, #212121 0px 0px 1px, #212121 0px 0px 1px;
+        z-index: -5;
+        animation: text-shadow-pop-left 1s forwards ease-in;
     }
 }
 
@@ -87,8 +99,8 @@ span {
 }
 
 .firstContainer {
-    background-color: #FCF6F5;
     width: 390px;
+    background-color: #FCF6F5;
     height: max-content;
     margin-top: 4px;
     margin-bottom: 7px;
@@ -98,6 +110,7 @@ span {
     border-bottom: 2px solid #0055ff;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.753);
+    z-index: -10;
 }
 
 .imgSection {

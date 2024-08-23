@@ -7,18 +7,18 @@ var myConfetti = confetti.create(myCanvas, {
 });
 
 const bothCornerConfetti = () => {
-    var duration = 3 * 1000;
+    var duration = 5 * 1000;
     var end = Date.now() + duration;
     var scalar = 1.2;
 
     (function frame() {
         // launch a few confetti from the left corner
         myConfetti({
-            particleCount: 4,
+            particleCount: 2,
             startVelocity: 25,
             angle: 315,
             spread: 120,
-            gravity: 0.8,
+            gravity: 0.5,
             ticks: 500,
             drift: 1,
             origin: {
@@ -26,17 +26,17 @@ const bothCornerConfetti = () => {
                 y: 0
             },
             shapes: ['circle', 'circle', 'square', 'star'],
-            colors: ['#ffffff', '#ffd700', '#ffcc00', '#ffffe0', '#ff4500'],
+            colors: ['#ffffff', '#ffd700', '#ffcc00', '#ffffe0', '#ff3500'],
             scalar
         });
 
         // and launch a few from the right corner
         myConfetti({
-            particleCount: 4,
+            particleCount: 2,
             startVelocity: 25,
             angle: 225,
             spread: 120,
-            gravity: 0.8,
+            gravity: 0.5,
             ticks: 500,
             drift: -1,
             origin: {
