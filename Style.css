@@ -15,29 +15,24 @@ span {
     font-style: italic;
 }
 
-@keyframes RightToLeft {
+@keyframes text-pop-up-top {
     0% {
-        transform: translateX(-400px);
-        opacity: 0%;
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+        text-shadow: none;
+        opacity: 0;
     }
 
-    25% {
-        opacity: 25%;
-    }
-
-    50% {
-        opacity: 50%;
-    }
-
-    75% {
-        opacity: 75%;
+    50%{
+        opacity: 0.5;
     }
 
     100% {
-        transform: translateX(0px);
-        opacity: 100%;
+        transform: translateY(-3px);
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 5px 5px rgba(0, 0, 0, 0.3);
         color: #115989;
-        text-shadow: 3px 2px 1px #7A7A7A;
+        opacity: 1;
     }
 }
 
@@ -48,12 +43,11 @@ span {
     }
 
     100% {
-        text-shadow: 0 1px #012622, 0 2px #012622, 0 3px #012622, 0 4px #012622;
-        transform: translateX(-4px);
+        text-shadow: 0 1px #012622, 0 2px #012622, 0 3px #012622, 0 4px #012622, 0 5px #012622, 0 6px #012622;
+        transform: translateX(-6px);
         color: #FFB6C1;
     }
 }
-
 
 .contains {
     display: flex;
@@ -70,7 +64,7 @@ span {
 
 .wrapper {
     width: 390px;
-    padding-top: 235px;
+    padding-top: 300px;
     height: 990px;
     border: 2px solid #b8b9bb;
     border-radius: 5px;
@@ -81,14 +75,13 @@ span {
 
     p {
         text-align: center;
-        font-size: 88px;
+        font-size: 76px;
         /* Light pink */
         color: #FFB6C1;
-        font-family: 'GreatVibes';
+        font-family: 'BLKCHCRY';
         text-shadow: #212121 0px 0px 1px, #212121 0px 0px 1px, #212121 0px 0px 1px,
             #212121 0px 0px 1px, #212121 0px 0px 1px, #212121 0px 0px 1px;
-        z-index: -5;
-        animation: text-shadow-pop-left 1s forwards ease-in;
+        animation: text-shadow-pop-left 2s forwards ease-in;
     }
 }
 
@@ -111,6 +104,7 @@ span {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.753);
     z-index: -10;
+    margin-left: 4px;
 }
 
 .imgSection {
@@ -139,29 +133,28 @@ span {
 }
 
 .animate-text {
-    width: 380px;
     display: flex;
     justify-content: center;
+    padding-left: 2px;
     color: #FCF6F5;
-    animation: RightToLeft 4s 6s forwards ease-in;
+    animation: text-pop-up-top 4s 6s forwards ease-in;
 
     p {
-        font-size: 34px;
+        font-size: 33px;
         font-family: 'MedusaGothic';
     }
 }
 
 .textSection {
-    padding-top: 2px;
     width: 380px;
-    margin-left: 4px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-left: 3px;
 }
 
 .text-section-p {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    padding-left: 2px;
 
     .p1 {
         font-family: "Times New Roman", Times, serif;
@@ -174,6 +167,7 @@ span {
             font-weight: bold;
             color: #cf0474;
             font-family: 'MedusaGothic';
+            letter-spacing: 0.5px;
         }
     }
 
@@ -225,7 +219,7 @@ span {
 
 .audio-text1 {
     position: absolute;
-    top: 1730px;
+    top: 1930px;
     left: 2px;
     width: 389px;
     height: 30px;
@@ -250,13 +244,13 @@ span {
 .Audio {
     width: 390px;
     padding-bottom: 3px;
-    top: 1775px;
+    top: 1975px;
     position: absolute;
 }
 
 .Audio1 {
     position: absolute;
-    top: 1835px;
+    top: 2035px;
     width: 390px;
     padding-bottom: 3px;
 }
@@ -265,7 +259,7 @@ span {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 1900px;
+    top: 2100px;
     width: 390px;
     left: 2px;
     font-family: 'EmilysCandy';
