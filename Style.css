@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-body,
-html {
-    width: 390px;
+body{
     font-family: 'GreatVibes', 'Times New Roman', serif;
 }
 
@@ -52,18 +50,17 @@ span {
 .contains {
     display: flex;
     justify-content: center;
-    width: 390px;
-
+    height: 1215px;
+    width: 100vw;
+    margin-bottom: 85px;
 }
 
 .firstContainer,
-.wrapper,
-.contains {
+.wrapper{
     position: absolute;
 }
 
 .wrapper {
-    width: 390px;
     padding-top: 300px;
     height: 990px;
     border: 2px solid #b8b9bb;
@@ -135,7 +132,6 @@ span {
 .animate-text {
     display: flex;
     justify-content: center;
-    padding-left: 2px;
     color: #FCF6F5;
     animation: text-pop-up-top 4s 6s forwards ease-in;
 
@@ -218,15 +214,16 @@ span {
 }
 
 .audio-text1 {
-    position: absolute;
+    /* position: absolute;
     top: 1930px;
-    left: 2px;
-    width: 389px;
+    left: 2px; */
+    width: 100vw;
     height: 30px;
     border-top: 2px solid #DFC5FF;
     border-left: 2px solid #b8b9bb;
     border-right: 2px solid #b8b9bb;
     border-bottom: 2px solid #DFC5FF;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.753);
     background-color: #E51A4C;
@@ -242,25 +239,27 @@ span {
 }
 
 .Audio {
-    width: 390px;
+    /* position: absolute;
+    top: 1975px; */
+    width: 100vw;
     padding-bottom: 3px;
-    top: 1975px;
-    position: absolute;
+    margin-bottom: 10px;
 }
 
 .Audio1 {
-    position: absolute;
-    top: 2035px;
-    width: 390px;
+    /* position: absolute;
+    top: 2035px; */
+    width: 100vw;
     padding-bottom: 3px;
+    margin-bottom: 10px;
 }
 
 .watermark {
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 2100px;
-    width: 390px;
+    /* position: absolute;
+    top: 2100px; */
+    width: 100vw;
     left: 2px;
     font-family: 'EmilysCandy';
     border-top: 2px solid #DFC5FF;
